@@ -22,8 +22,8 @@ public class Calculator {
                 System.out.println("(x*y)=" +(x*y));
                 break;
             case  'D' :
-                if (y<0 | y<0) {
-                    System.out.println("(x/y)=" +(x/y));}
+                if (y<0) {
+                    System.out.println( "(x/y)=" +(x/y));}
                 if (y == 0) {
                     System.out.println( "делить на ноль нельзя");}
                     break;
