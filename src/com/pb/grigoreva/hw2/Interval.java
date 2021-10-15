@@ -6,10 +6,9 @@ public class Interval {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int x;
-        System.out.println ("Пожайлуста введите число из диапазона от 0 до 100");
-        x = scan.nextInt() ;
+        System.out.println("Пожайлуста введите число из диапазона от 0 до 100");
+        x = scan.nextInt();
         if (x>=0) {
-            System.out.println ( "диапазон [0-14]");
             if (x<=14) {
                 System.out.println ( "диапазон [0-14]");
             }
@@ -24,10 +23,5 @@ public class Interval {
             }
             if (x<0 | x>100) {
                 System.out.println ( "Ошибка выберите число из диапазона");
-            }
-        }
-
-
-
-    }
-}
+        }}
+}}
