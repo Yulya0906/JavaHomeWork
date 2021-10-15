@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // char grade = args [0] .charAt (0);
-        char num = 'D';
+        char num = 'A';
         Scanner scan = new Scanner(System.in);
         int x ;
         int y;
