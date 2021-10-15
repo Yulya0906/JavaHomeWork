@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // char grade = args [0] .charAt (0);
-        char num = 'A';
+        char num = 'D';
         Scanner scan = new Scanner(System.in);
         int x ;
         int y;
@@ -22,8 +22,9 @@ public class Calculator {
                 System.out.println( +(x*y));
                 break;
             case  'D' :
-                System.out.println( +(x/y));
-                if (y==0) {
+                if (y<0 | y<0) {
+                    System.out.println( +(x/y));}
+                if (y == 0) {
                     System.out.println( "делить на ноль нельзя");}
                     break;
 
