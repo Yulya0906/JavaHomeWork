@@ -1,5 +1,7 @@
 package com.pb.grigoreva.hw3;
 
+import java.util.Arrays;
+
 public class Array {
     public static void main(String[] args) {
         // На 9 строке создаем массив целочисленных элементов с именем array размерностью в 10 элементов
@@ -15,30 +17,37 @@ public class Array {
         array[7] = -8;
         array[8] = 1;
         array[9] = 2;
-        System.out.println(array[0]);
-        System.out.println(array[1]);
-        System.out.println(array[2]);
-        System.out.println(array[3]);
-        System.out.println(array[4]);
-        System.out.println(array[5]);
-        System.out.println(array[6]);
-        System.out.println(array[7]);
-        System.out.println(array[8]);
-        System.out.println(array[9]);
+        System.out.println("В массиве " + Arrays.toString(array));
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum+=array[i];
         }
         System.out.println("Array Sum = "+sum);
         int counter = 0 ;
-        for (int i = 0; i<10; i++) {
-            if (array[i]>0)
-             counter = counter + 1;
-            System.out.println("Количество положительных чисел" counter);
-            break;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 0) {
+                counter++;
+            }
+        }
+        System.out.println(counter + " положительных элементов");
+        boolean isSorted = false;
+        int buf;
+        while(!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < array.length-1; i++) {
+                if(array[i] > array[i+1]){
+                    isSorted = false;
+
+                    buf = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = buf;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
         }
 
     }
 
-}
+
 
