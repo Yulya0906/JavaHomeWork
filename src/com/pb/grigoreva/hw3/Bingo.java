@@ -20,11 +20,11 @@ public class Bingo {
             String value = in.next();
             y = Integer.parseInt(value);
             if (y > 8) {
-                System.out.println("y>8");
+                System.out.println("число больше загаданого числа");
             }else if (y < 8) {
-                System.out.println("y<8");
+                System.out.println("число меньше загаданого числа");
             } else if (y ==8)
-            {System.out.println("y=8");}
+            {System.out.println("число ровен загаданому числу");}
 
 
                 if (value.equals("exit")) {
