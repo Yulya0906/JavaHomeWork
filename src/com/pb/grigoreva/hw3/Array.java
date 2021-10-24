@@ -4,24 +4,17 @@ public class Array {
     public static void main(String[] args) {
         // На 9 строке создаем массив целочисленных элементов с именем array размерностью в 10 элементов
 
-        int[] array = new int[10];
-
-
-        // На 13 строке элементу массива array по индексу 0 присваиваем значение 10
-
-        array[0] = 10;
-        array[1] = 20;
-        array[2] = 30;
-        array[3] = 40;
-        array[4] = 50;
-        array[5] = 60;
-        array[6] = 70;
-        array[7] = 80;
-        array[8] = 90;
-        array[9] = 100;
-
-        // На 21 строке выводим на экран значение элемента массива array по индексу 0
-
+        int[] array = new int[] {-1,7,3,5,-9,6,4,-8,1,2};
+        array[0] = -1;
+        array[1] = 7;
+        array[2] = 3;
+        array[3] = 5;
+        array[4] = -9;
+        array[5] = 6;
+        array[6] = 4;
+        array[7] = -8;
+        array[8] = 1;
+        array[9] = 2;
         System.out.println(array[0]);
         System.out.println(array[1]);
         System.out.println(array[2]);
@@ -32,7 +25,20 @@ public class Array {
         System.out.println(array[7]);
         System.out.println(array[8]);
         System.out.println(array[9]);
-
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum+=array[i];
+        }
+        System.out.println("Array Sum = "+sum);
+        int counter = 0 ;
+        for (int i = 0; i<10; i++) {
+            if (array[i]>0)
+             counter = counter + 1;
+            System.out.println("Количество положительных чисел" counter);
+            break;
+        }
 
     }
+
 }
+
