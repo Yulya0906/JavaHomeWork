@@ -3,7 +3,7 @@ package com.pb.grigoreva.hw4;
 
 import java.util.Scanner;
 
-public class test {
+public class CapitalLetter {
     public static void main(String[] args) {
         String str;
         String outStr = null;
