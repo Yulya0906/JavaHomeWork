@@ -80,7 +80,7 @@ public class Reader {
     public static void setBookCount(int bookCount) {
         Reader.bookCount = bookCount;
         Person person = new Person( "Петров А.И");
-      reader1.takeBook (new Person( "Петров А.И");
+
     }
 
     public void setDate() {
