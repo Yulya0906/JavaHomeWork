@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class FileNumbers {
-        void createNumbersFile() {
+       static void createNumbersFile() throws Exception {
         try (Writer writer = new FileWriter("numbers.txt")) {
             int[][] array = new int[10][10];
             for (int i = 0; i < array.length; i++, System.out.println()) {
@@ -18,7 +18,7 @@ public class FileNumbers {
             System.out.println("Error with File write:" + e);
         }
         }
-        void createOddNumbersFile()
+       static void createOddNumbersFile() throws IOException
         {try (Scanner in = new Scanner(new File("numbers.txt"))) {
             PrintWriter pw = new PrintWriter("odd-numbers.txt");
             System.out.println("Вывод чисел , с учетом замены целых четных чисел на '0':");
@@ -43,6 +43,10 @@ public class FileNumbers {
         }
 
         }
+    public static void main (String[] args) throws Exception {
+        createNumbersFile();
+        createOddNumbersFile();
 
+    }
 
     }
