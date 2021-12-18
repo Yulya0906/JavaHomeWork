@@ -1,6 +1,8 @@
 package com.pb.grigoreva.hw10;
 
 
+import com.pb.grigoreva.hw10.Number;
+
 public class NumBox <T extends Number> {
     private final T[] numbers;
 
@@ -35,7 +37,7 @@ public class NumBox <T extends Number> {
         return average;
     }
 
-    public double sum {
+    public double sum; {
         double sum = 0.0;
         for (T i : numbers)
             if (i == null) {

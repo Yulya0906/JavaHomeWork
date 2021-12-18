@@ -8,8 +8,13 @@
       <excludeFolder url="file://$MODULE_DIR$/src/com/pb/grigoreva/hw8" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/pb/grigoreva/hw5" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/pb/grigoreva/hw6" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/pb/grigoreva/hw10" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jackson-annotations-2.13.0" level="project" />
+    <orderEntry type="library" name="jackson-annotations-2.13.01" level="project" />
+    <orderEntry type="library" name="jackson-core-2.13.0" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.13.0" level="project" />
   </component>
 </module>
